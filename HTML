@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اینترنت محدود جام ایمن</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container for the image */
+        .image-container {
+            width: 100vw; /* Full width of the viewport */
+            height: 100vh; /* Full height of the viewport */
+            position: relative;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Background image */
+        .background-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the entire container */
+            z-index: 1;
+        }
+
+
+        /* Main content */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 3;
+            width: 90%; /* Limits content width */
+            max-width: 1300px; /* Maximum content width */
+        }
+
+        /* Title */
+        .content h1 {
+            font-size: 3.5rem; /* Responsive font size */
+            margin-bottom: 45px;
+            color: #008000; /* Green color */
+        }
+
+        /* Titr */
+        .content h2 {
+            font-size: 8rem; /* Responsive font size */
+            margin-bottom: 80px;
+            color: #C40202; /* Red color */
+        }
+
+        /* Description */
+        .content p {
+            font-size: 1.5rem; /* Responsive font size */
+            margin-bottom: 80px;
+            color: #000000; /* Black color */
+        }
+
+        /* Icons (Technology elements) */
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* Space between icons */
+            flex-wrap: wrap; /* Wraps icons to the next line if needed */
+        }
+
+        .icons img {
+            width: 80px; /* Icon size */
+            height: auto;
+            opacity: 0.8;
+        }
+
+        /* Footer text */
+        .footer {
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1rem; /* Responsive font size */
+            color: #cccccc;
+            z-index: 3;
+            text-align: center;
+            width: 100%; /* Full width */
+        }
+
+        /* Email link styles */
+        .email-link {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: block; /* Ensures each link is on a new line */
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 600px) {
+            /* Adjustments for tablets and smaller devices */
+            .content h1 {
+                font-size: 2rem; /* Smaller title */
+            }
+            .content h2 {
+                font-size: 6rem; /* Smaller titr */
+            }
+            .content p {
+                font-size: 1rem; /* Smaller description */
+            }
+            .icons img {
+                width: 50px; /* Smaller icons */
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Adjustments for mobile devices */
+            .content h1 {
+                font-size: 1rem; /* Even smaller title */
+            }
+            .content h2 {
+                font-size: 2.2rem; /* Even smaller titr */
+            }
+            .content p {
+                font-size: 0.7rem; /* Even smaller description */
+            }
+            .icons img {
+                width: 30px; /* Even smaller icons */
+            }
+            .footer {
+                font-size: 0.8rem; /* Smaller footer text */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <!-- Background image -->
+        <img class="background-image" src="Background.png" alt="پس‌زمینه فناوری اطلاعات">
+        <!-- Overlay for better text visibility -->
+        <div class="overlay"></div>
+        <!-- Main content -->
+        <div class="content">
+            <h2>ورود به این سایت ممنوع است</h2>
+            <h1>دسترسی شما برای ورود به این وبسایت محدود شده</h1>
+            <p>در صورتیکه این وبسایت به اشتباه مسدود شده، لطفا با ایمیل های پایین صفحه با ما در تماس باشید</p>
+            <!-- Technology icons -->
+            <div class="icons">
+                <img src="Block_Hand_Left.png" alt="شبکه"> <!-- Network icon -->
+                <img src="Web.png" alt="سرور"> <!-- Server icon -->
+                <img src="Block_Hand_Right.png" alt="کامپیوتر"> <!-- Computer icon -->
+            </div>
+        </div>
+
+        <!-- Footer text -->
+        <div class="footer">
+            <a href="http://mail.jamimen.local" class="email-link">*ایمیل داخلی (سازمانی) واحد فناوری و اطلاعات*</a>
+            <a href="https://webmail.jamimen.com" class="email-link">*ایمیل عمومی (برون سازمانی) واحد فناوری و اطلاعات*</a>
+        </div>
+    </div>
+</body>
+</html>
